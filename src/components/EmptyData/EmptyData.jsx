@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 const EmptyList = ({ message }) => {
   return (
     <Root>
-      <h3>{message}</h3>
+      <Text>{message}</Text>
     </Root>
   );
 };
@@ -16,4 +16,9 @@ const Root = styled.div({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
+  padding: '10px',
+});
+
+const Text = styled.h3({
+  textAlign: 'center',
 });

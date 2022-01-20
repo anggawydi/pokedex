@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { useNavigate } from 'react-router-dom';
 
-import { colors, widths } from '../../styles';
+import { colors, widths, mq } from '../../styles';
 import logo from '../../assets/images/logo192.png';
 
 const Header = () => {
@@ -19,7 +19,7 @@ const Header = () => {
               </LogoContainer>
               <Title>
                 <h3>PokeDex</h3>
-                <p>Mini Games Pokemon</p>
+                <p>Games Pokemon</p>
               </Title>
             </HomeButton>
             <ButtonMyPokemon onClick={() => navigate('/my-pokemon-list')}>
@@ -42,7 +42,7 @@ const HeaderBar = styled.div({
   justifyContent: 'center',
   borderBottom: `solid 1px ${colors.primary}`,
   boxShadow: '0px 1px 5px 0px rgba(0,0,0,0.15)',
-  padding: '5px 30px',
+  padding: '5px 20px',
   minHeight: 80,
   backgroundColor: 'white',
 });
@@ -76,9 +76,13 @@ const HomeButton = styled.div({
 const LogoContainer = styled.div({ display: 'flex', alignSelf: 'center' });
 
 const Logo = styled.img({
-  height: 60,
-  width: 60,
+  height: 40,
+  width: 40,
   marginRight: 8,
+  [mq[0]]: {
+    width: 60,
+    height: 60
+  }
 });
 
 const Title = styled.div({

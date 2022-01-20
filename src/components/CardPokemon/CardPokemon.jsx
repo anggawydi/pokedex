@@ -127,6 +127,10 @@ const Title = styled.h3({
   textAlign: 'center',
   lineHeight: '28px',
   textTransform: 'capitalize',
+  fontSize: '20px',
+  [mq[0]]: {
+    fontSize: '25px',
+  },
 });
 
 const Owned = styled.p({

@@ -24,7 +24,7 @@ const Root = styled.div({
   padding: '10px 10px 10px 10px',
   backgroundColor: '#fff',
   borderRadius: 5,
-  margin: '15px 0',
+  margin: '15px 0 0 10px',
 });
 
 const SelectComp = styled.select({

@@ -16,7 +16,7 @@ export default PokemonType;
 const BoxType = styled.div((props) => ({
   borderRadius: 6,
   padding: props.halfPadding ? '5px 15px' : '5px 30px',
-  margin: '0 10px',
+  margin: props.halfPadding ? '0 5px' : '0 10px',
   textTransform: 'capitalize',
   backgroundColor: colors[props.type],
 }));

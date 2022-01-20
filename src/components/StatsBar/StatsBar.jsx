@@ -30,8 +30,7 @@ const StatName = styled.div({
   [mq[1]]: {
     width: '40%',
   },
-
-  width: '40%',
+  width: '55%',
   textTransform: 'capitalize',
 });
 
